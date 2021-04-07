@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Recuperame Sasha/main</title>
+  <link rel="shortcut icon" href="img/logo2.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8">
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/estilos2.css">
+  <link rel="stylesheet" href="css/estilos3.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="menu.js"></script>
+
+  <script>
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyAYSXEARqz4atK8_3wDrRSWweJ2xuJU8zY",
+      authDomain: "sasha-c513a.firebaseapp.com",
+      projectId: "sasha-c513a",
+      storageBucket: "sasha-c513a.appspot.com",
+      messagingSenderId: "88252255310",
+      appId: "1:88252255310:web:7a23e5eb0a2c9b9fcb071f",
+      measurementId: "G-DRR8B2GVZ9"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+</head>
+
+<body>
+  
+  <script src="app.js"></script>
+  <div id="login">
+
+  </div>
+  <center>
+    <div>
+      <img width="30%" src="img/logo3.png">
+    </div>
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text"><img width="20%" src="img/feed.png"></span></a></li>
+			<li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text"><img width="20%" src="img/lost-item.png"></span></a></li>
+			<li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text"><img width="20%" src="img/menu.png"></span></a></li>
+			
+		</ul>
+    
+		<div class="secciones">
+			<article id="tab1">
+				<center>
+				<div id="tabOne"><h3>No hay publicaciones disponibles.</h3></div>
+      </center>
+			</article>
+			<article id="tab2">
+				<center>
+				<div id="tabTwo"><h3>No hay reportes disponibles.</h3></div>
+      </center>
+			</article>
+			<article id="tab3">
+				<center>
+				<div id="tabTree"></div>
+      </center>
+			</article>
+			
+		</div>
+	</div>
+
+</body>
+
+</html>

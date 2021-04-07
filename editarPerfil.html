@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recuperame Sasha/perfil</title>
+    <link rel="shortcut icon" href="img/logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/estilos4.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="menu.js"></script>
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyAYSXEARqz4atK8_3wDrRSWweJ2xuJU8zY",
+            authDomain: "sasha-c513a.firebaseapp.com",
+            projectId: "sasha-c513a",
+            storageBucket: "sasha-c513a.appspot.com",
+            messagingSenderId: "88252255310",
+            appId: "1:88252255310:web:7a23e5eb0a2c9b9fcb071f",
+            measurementId: "G-DRR8B2GVZ9"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+    <div id="login">
+        <br>
+        <img src="img/back.png" onclick="back()" width="5%" id="back">
+    </div>
+    <center>
+        <div>
+            <img width="30%" src="img/logo3.png">
+        </div>
+    </center>
+
+    <center>
+        <br><br>
+
+
+
+        <div class="container">
+            <div id="aviso">
+                
+            </div>
+            <h3>Perfil</h3>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body" id="contenido3">
+                        <form>
+                            <div class="form-gruop">
+                                <img width="70%" id="image" width="300">
+                                <br>
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <h5>Nombre</h5>
+                                <input type="text" id="nombre" class="form-control" placeholder="Nombre"
+                                    readonly="readonly">
+                            </div>
+                            <div class="form-group">
+                                <h5>Apellido</h5>
+                                <input id="apellido" class="form-control" placeholder="apellido" readonly="readonly">
+                            </div>
+                            <div class="form-group">
+                                <h5>Institución</h5>
+                                <select class="form-control" id="institucion" disabled="true">
+                                    <option value="iueCode">institución universitaria esumer</option>
+                                    <option value="udeaCode">universidad de antioquia</option>
+                                    <option value="udemCode">universidad de medellin</option>
+                                    <option value="uclaCode">universidad católica Luis Amigó</option>
+                                    <option value="eiaCode">escuela de ingenieros de antioquia</option>
+
+
+                                </select>
+                            </div>
+
+                            <hr>
+                            <div id="sugerencias" class="form-gruop">
+
+                            </div>
+                            <div id="botonE">
+                                <button onclick="editable()" class="btn btn-danger" id="btn-task-form">
+                                    Editar
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="tasks-container">
+
+            </div>
+
+        </div>
+    </center>
+    <div class="wrap">
+        <ul class="tabs">
+            <li><a href="#tab1user"><span class="fa fa-home"></span><span class="tab-text"><img width="10%"
+                            src="img/feed.png"></span></a></li>
+            <li><a href="#tab2user"><span class="fa fa-group"></span><span class="tab-text"><img width="10%"
+                            src="img/lost-item.png"></span></a></li>
+
+
+        </ul>
+
+        <div class="secciones">
+            <article id="tab1user">
+                <center>
+                    <h2>Mis publicaciones</h2>
+                    <div id="tabOneUser">
+                        <h3>No hay publicaciones disponibles.</h3>
+                    </div>
+                </center>
+            </article>
+            <article id="tab2user">
+                <center>
+                    <h2>Mis reportes</h2>
+                    <div id="tabTwoUser">
+                        <h3>No hay reportes disponibles.</h3>
+                    </div>
+                </center>
+            </article>
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
